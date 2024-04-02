@@ -1,5 +1,6 @@
 package amazon;
 
+@SuppressWarnings("unused")
 public class P1 {
     private int solution1(int num) {
         // base case
@@ -23,6 +24,32 @@ public class P1 {
         }
 
         return newNum;
+    }
+
+    private int reverse(int num) {
+        int reverse = 0;
+        while (num > 0) {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num /= 10;
+        }
+        return reverse;
+    }
+
+    private int solution2(int num) {
+        // base case
+        if (num == 0)
+            return 5;
+
+        int newNum = 0;
+        while (num > 0) {
+            int digit = num % 10;
+            int newDigit = digit == 0 ? 5 : digit;
+            newNum = newNum * 10 + newDigit;
+            num /= 10;
+        }
+
+        return reverse(newNum);
     }
 
     public int convertfive(int num) {
