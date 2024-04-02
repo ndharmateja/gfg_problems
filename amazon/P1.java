@@ -1,7 +1,7 @@
 package amazon;
 
 public class P1 {
-    public int convertfive(int num) {
+    private int solution1(int num) {
         // base case
         if (num == 0)
             return 5;
@@ -23,6 +23,10 @@ public class P1 {
         }
 
         return newNum;
+    }
+
+    public int convertfive(int num) {
+        return solution1(num);
     }
 
     public static void main(String[] args) {
