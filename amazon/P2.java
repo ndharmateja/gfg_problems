@@ -6,21 +6,21 @@ public class P2 {
             return -1;
 
         // Maintain the top 3 largest values
-        int x1, x2, x3;
-        x1 = x2 = x3 = Integer.MIN_VALUE;
+        int xMax, xMaxer, xMaxest;
+        xMax = xMaxer = xMaxest = Integer.MIN_VALUE;
         for (int x : a) {
-            if (x > x3) {
-                x1 = x2;
-                x2 = x3;
-                x3 = x;
-            } else if (x > x2) {
-                x1 = x2;
-                x2 = x;
-            } else if (x > x1) {
-                x1 = x;
+            if (x > xMaxest) {
+                xMax = xMaxer;
+                xMaxer = xMaxest;
+                xMaxest = x;
+            } else if (x > xMaxer) {
+                xMax = xMaxer;
+                xMaxer = x;
+            } else if (x > xMax) {
+                xMax = x;
             }
         }
 
-        return x1;
+        return xMax;
     }
 }
