@@ -1,6 +1,7 @@
 package amazon.arrays;
 
 public class P4 {
+    // TODO
     public int minDist(int a[], int n, int x, int y) {
         int xIndex = -1;
         int yIndex = -1;
