@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class P10 {
+    /**
+     * O(n log n) time and O(1) space complexities
+     * 
+     * @param a
+     * @param n
+     * @return
+     */
     private static ArrayList<Integer> solution1(int[] a, int n) {
         ArrayList<Integer> out = new ArrayList<>();
 
