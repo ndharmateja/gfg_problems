@@ -1,4 +1,4 @@
-package amazon;
+package amazon.arrays;
 
 public class P27 {
     static int[] SortBinaryArray(int[] a, int n) {

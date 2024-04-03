@@ -1,4 +1,4 @@
-package amazon;
+package amazon.arrays;
 
 @SuppressWarnings("unused")
 public class P1 {

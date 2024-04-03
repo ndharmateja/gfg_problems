@@ -1,4 +1,4 @@
-package amazon;
+package amazon.arrays;
 
 public class P13 {
     public static int equilibriumPoint(long arr[], int n) {

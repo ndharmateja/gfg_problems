@@ -1,4 +1,4 @@
-package amazon;
+package amazon.arrays;
 
 public class P4 {
     public int minDist(int a[], int n, int x, int y) {

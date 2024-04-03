@@ -1,4 +1,4 @@
-package amazon;
+package amazon.arrays;
 
 public class P2 {
     public int thirdLargest(int a[], int n) {

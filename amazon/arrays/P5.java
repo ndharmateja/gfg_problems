@@ -1,4 +1,4 @@
-package amazon;
+package amazon.arrays;
 
 public class P5 {
     private static void swap(int[] a, int i, int j) {
