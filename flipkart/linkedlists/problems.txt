@@ -2,4 +2,4 @@
 2. 
 3. https://www.geeksforgeeks.org/problems/delete-middle-of-linked-list/1
 7. https://www.geeksforgeeks.org/problems/merge-2-sorted-linked-list-in-reverse-order/1
-13. https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1 - refer amazon.linkedlist.P27
+13. https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1 - refer amazon.linkedlists.P27

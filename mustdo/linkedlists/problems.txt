@@ -1,1 +1,1 @@
-1. https://www.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1 - refer amazon.linkedlist.P6
+1. https://www.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1 - refer amazon.linkedlists.P6
