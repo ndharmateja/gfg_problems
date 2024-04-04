@@ -1,23 +1,17 @@
-package amazon.linkedlist;
+package amazon.linkedlists;
 
-// TODO
-public class P17 {
+public class P16 {
     static class Node {
         int data;
         Node next;
 
-        Node(int key) {
-            this.data = key;
+        Node(int d) {
+            data = d;
             next = null;
         }
     }
 
-    private static Node getMiddleNode(Node head) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getMiddleNode'");
-    }
-
-    static Node merge(Node head1, Node head2) {
+    Node sortedMerge(Node head1, Node head2) {
         // The new list
         Node dummy = new Node(-1);
         Node curr = dummy;
@@ -46,16 +40,5 @@ public class P17 {
         }
 
         return dummy.next;
-    }
-
-    static Node mergeSort(Node head) {
-        if (head == null || head.next == null)
-            return head;
-
-        Node head2 = getMiddleNode(head);
-        head = mergeSort(head);
-        head2 = mergeSort(head2);
-
-        return merge(head, head2);
     }
 }

@@ -1,4 +1,4 @@
-package amazon.linkedlist;
+package amazon.linkedlists;
 
 public class P7 {
     static class Node {

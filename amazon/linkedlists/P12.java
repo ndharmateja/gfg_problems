@@ -1,4 +1,4 @@
-package amazon.linkedlist;
+package amazon.linkedlists;
 
 @SuppressWarnings("unused")
 public class P12 {
