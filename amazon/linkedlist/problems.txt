@@ -4,3 +4,7 @@
 4. https://www.geeksforgeeks.org/problems/reverse-a-linked-list/1
 5. https://www.geeksforgeeks.org/problems/rotate-a-linked-list/1
 6. https://www.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1
+7. https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1
+16. https://www.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1
+17. https://www.geeksforgeeks.org/problems/sort-a-linked-list/1
+27. https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1
