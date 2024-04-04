@@ -1,4 +1,4 @@
-package microsoft.linkedlist;
+package microsoft.linkedlists;
 
 public class P7 {
     static class Node {
