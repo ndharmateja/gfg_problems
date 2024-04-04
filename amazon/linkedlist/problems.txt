@@ -12,3 +12,4 @@
 20. https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-linked-lists/1
 27. https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1
 35. https://www.geeksforgeeks.org/problems/delete-node-in-doubly-linked-list/1
+39. https://www.geeksforgeeks.org/problems/linked-list-that-is-sorted-alternatingly/1
