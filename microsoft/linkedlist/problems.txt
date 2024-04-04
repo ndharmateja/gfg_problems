@@ -1,1 +1,2 @@
 7. https://www.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1
+8. https://www.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1
