@@ -1,6 +1,6 @@
-package microsoft.linkedlist;
+package amazon.linkedlist;
 
-public class P8 {
+public class P16 {
     static class Node {
         int data;
         Node next;
