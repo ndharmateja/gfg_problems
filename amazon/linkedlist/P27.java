@@ -1,6 +1,6 @@
-package flipkart.linkedlist;
+package amazon.linkedlist;
 
-public class P13 {
+public class P27 {
     static class Node {
         int data;
         Node next;
