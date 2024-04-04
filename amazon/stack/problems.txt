@@ -3,4 +3,5 @@
 3. https://www.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1
 5. https://www.geeksforgeeks.org/problems/special-stack/1
 6. https://www.geeksforgeeks.org/problems/sort-a-stack/1
+9. https://www.geeksforgeeks.org/problems/get-minimum-element-from-stack/1
 11. https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1
