@@ -1,6 +1,6 @@
 package amazon.linkedlist;
 
-public class P8 {
+public class P11 {
     static class Node {
         int data;
         Node next;
@@ -62,7 +62,7 @@ public class P8 {
         h.next.next.next = new Node(4);
 
         print(h);
-        new P8().rearrangeEvenOdd(h);
+        new P11().rearrangeEvenOdd(h);
         print(h);
     }
 }
