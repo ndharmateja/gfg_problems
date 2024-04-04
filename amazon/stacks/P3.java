@@ -1,4 +1,4 @@
-package amazon.stack;
+package amazon.stacks;
 
 public class P3 {
     class twoStacks {

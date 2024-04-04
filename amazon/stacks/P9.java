@@ -1,4 +1,4 @@
-package amazon.stack;
+package amazon.stacks;
 
 import java.util.Stack;
 

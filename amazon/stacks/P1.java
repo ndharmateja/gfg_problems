@@ -1,4 +1,4 @@
-package amazon.stack;
+package amazon.stacks;
 
 @SuppressWarnings("unused")
 public class P1 {
