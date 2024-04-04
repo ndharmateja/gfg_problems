@@ -2,7 +2,7 @@ package amazon.stack;
 
 import java.util.Stack;
 
-public class P11 {
+public class P7 {
     private static final char LEFT_PARANTHESIS = '(';
     private static final char RIGHT_PARANTHESIS = ')';
     private static final char LEFT_BRACE = '{';
