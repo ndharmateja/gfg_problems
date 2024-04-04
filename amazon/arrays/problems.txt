@@ -1,0 +1,10 @@
+1. https://www.geeksforgeeks.org/problems/replace-all-0-with-5-in-an-input-integer/1
+2. https://www.geeksforgeeks.org/problems/third-largest-element/1
+4. https://www.geeksforgeeks.org/problems/minimum-distance-between-two-numbers/1
+5. https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1
+7. https://www.geeksforgeeks.org/problems/remove-duplicates-in-small-prime-array/1
+10. https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1
+13. https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
+25. https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
+26. https://www.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1
+27. https://www.geeksforgeeks.org/problems/binary-array-sorting-1587115620/1
