@@ -1,4 +1,4 @@
-package flipkart.linkedlist;
+package flipkart.linkedlists;
 
 public class P7 {
     static class Node {
