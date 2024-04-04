@@ -3,4 +3,4 @@
 3. https://www.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1
 5. https://www.geeksforgeeks.org/problems/special-stack/1
 6. https://www.geeksforgeeks.org/problems/sort-a-stack/1
-7. https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1
+11. https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1
