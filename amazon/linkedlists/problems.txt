@@ -19,6 +19,7 @@
 23. https://www.geeksforgeeks.org/problems/union-of-two-linked-list/1
 24. https://www.geeksforgeeks.org/problems/remove-duplicates-from-an-unsorted-linked-list/1
 27. https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1
+31. https://www.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1
 35. https://www.geeksforgeeks.org/problems/delete-node-in-doubly-linked-list/1
 38. https://www.geeksforgeeks.org/problems/intersection-of-two-linked-list/1
 39. https://www.geeksforgeeks.org/problems/linked-list-that-is-sorted-alternatingly/1
