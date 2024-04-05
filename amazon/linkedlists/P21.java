@@ -1,9 +1,9 @@
-package flipkart.linkedlists;
+package amazon.linkedlists;
 
 import java.util.HashSet;
 
 @SuppressWarnings("unused")
-public class P11 {
+public class P21 {
     static class Node {
         int data;
         Node next;
@@ -105,6 +105,6 @@ public class P11 {
 
         print(h1);
         print(h2);
-        System.out.println(new P11().intersectPoint(h1, h2));
+        System.out.println(new P21().intersectPoint(h1, h2));
     }
 }
