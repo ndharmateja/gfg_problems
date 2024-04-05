@@ -6,6 +6,7 @@
 6. https://www.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1
 7. https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1
 8. https://www.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1
+9. https://www.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1
 11. https://www.geeksforgeeks.org/problems/rearrange-a-linked-list/1
 12. https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1
 16. https://www.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1
