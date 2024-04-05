@@ -18,6 +18,7 @@
 22. https://www.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1
 23. https://www.geeksforgeeks.org/problems/union-of-two-linked-list/1
 24. https://www.geeksforgeeks.org/problems/remove-duplicates-from-an-unsorted-linked-list/1
+26. https://www.geeksforgeeks.org/problems/count-pairs-whose-sum-is-equal-to-x/1
 27. https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1
 30. https://www.geeksforgeeks.org/problems/polynomial-addition/1
 31. https://www.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1
