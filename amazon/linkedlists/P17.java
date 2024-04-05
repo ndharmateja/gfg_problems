@@ -1,6 +1,5 @@
 package amazon.linkedlists;
 
-// TODO
 public class P17 {
     static class Node {
         int data;
@@ -12,12 +11,31 @@ public class P17 {
         }
     }
 
-    private static Node getMiddleNode(Node head) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getMiddleNode'");
+    /**
+     * splits list into 2 halves
+     * and returns the head of the second half
+     * 
+     * @param h
+     * @return
+     */
+    private static Node splitList(Node h) {
+        Node prev = null;
+        Node slow = h;
+        Node fast = h;
+        while (fast != null && fast.next != null) {
+            prev = slow;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // Break the list into 2 halves
+        prev.next = null;
+
+        // Return head of second half
+        return slow;
     }
 
-    static Node merge(Node head1, Node head2) {
+    private static Node merge(Node head1, Node head2) {
         // The new list
         Node dummy = new Node(-1);
         Node curr = dummy;
@@ -48,14 +66,35 @@ public class P17 {
         return dummy.next;
     }
 
-    static Node mergeSort(Node head) {
+    public static Node mergeSort(Node head) {
         if (head == null || head.next == null)
             return head;
 
-        Node head2 = getMiddleNode(head);
+        Node head2 = splitList(head);
         head = mergeSort(head);
         head2 = mergeSort(head2);
 
         return merge(head, head2);
+    }
+
+    private static void print(Node head) {
+        Node curr = head;
+        while (curr != null) {
+            System.out.print(curr.data + " -> ");
+            curr = curr.next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Node h = new Node(3);
+        h.next = new Node(5);
+        h.next.next = new Node(2);
+        h.next.next.next = new Node(4);
+        h.next.next.next.next = new Node(1);
+        h.next.next.next.next.next = new Node(4);
+
+        print(h);
+        print(mergeSort(h));
     }
 }
