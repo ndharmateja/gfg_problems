@@ -1,16 +1,8 @@
 package amazon.linkedlists;
 
+import java.util.Scanner;
+
 public class P7 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int data) {
-            this.data = data;
-            next = null;
-        }
-    }
-
     static Node insertAfter(Node node, Node toInsert) {
         toInsert.next = node.next;
         node.next = toInsert;
@@ -60,22 +52,15 @@ public class P7 {
         return dummy0.next;
     }
 
-    static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-        Node h = new Node(2);
-        h.next = new Node(2);
-        h.next.next = new Node(1);
+        // 3
+        // 2 2 1
+        Scanner s = new Scanner(System.in);
+        Node h = Utils.inputList(s);
+        s.close();
 
-        print(h);
+        Utils.print(h);
         h = segregate(h);
-        print(h);
+        Utils.print(h);
     }
 }

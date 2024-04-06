@@ -1,16 +1,6 @@
 package amazon.linkedlists;
 
 public class P5 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
     public Node rotate(Node head, int k) {
         if (k == 0)
             return head;

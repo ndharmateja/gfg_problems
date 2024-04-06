@@ -2,26 +2,6 @@ package amazon.linkedlists;
 
 @SuppressWarnings("unused")
 public class P12 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
-    private int getSize(Node head) {
-        int size = 0;
-        Node curr = head;
-        while (curr != null) {
-            size++;
-            curr = curr.next;
-        }
-        return size;
-    }
-
     private Node getKthNodeFromStart(Node head, int k) {
         Node curr = head;
         for (int i = 0; i < k - 1; i++) {
@@ -31,7 +11,7 @@ public class P12 {
     }
 
     private int solution1(Node head, int n) {
-        int size = getSize(head);
+        int size = Utils.getSize(head);
         if (n > size)
             return -1;
 

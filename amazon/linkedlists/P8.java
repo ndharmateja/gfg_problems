@@ -1,36 +1,10 @@
 package amazon.linkedlists;
 
+import java.util.Scanner;
+
 public class P8 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int x) {
-            data = x;
-            next = null;
-        }
-    }
-
-    private static Node reverse(Node head) {
-        if (head == null || head.next == null)
-            return head;
-
-        Node prev = null;
-        Node curr = head;
-
-        while (curr != null) {
-            Node next = curr.next;
-            curr.next = prev;
-
-            prev = curr;
-            curr = next;
-        }
-
-        return prev;
-    }
-
     public static Node addOne(Node head) {
-        head = reverse(head);
+        head = Utils.reverse(head);
 
         // Add 1 to curr node
         // and inside the loop handle the overflow for each node
@@ -60,25 +34,17 @@ public class P8 {
             }
         }
 
-        return reverse(head);
-    }
-
-    static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
+        return Utils.reverse(head);
     }
 
     public static void main(String[] args) {
-        Node h = new Node(1);
-        h.next = new Node(9);
-        h.next.next = new Node(9);
-        h.next.next.next = new Node(9);
+        // 4
+        // 1 9 9 9
+        Scanner s = new Scanner(System.in);
+        Node h = Utils.inputList(s);
+        s.close();
 
         h = addOne(h);
-        print(h);
+        Utils.print(h);
     }
 }

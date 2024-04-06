@@ -1,16 +1,9 @@
 package amazon.linkedlists;
 
+import java.util.Scanner;
+
 public class P4 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int value) {
-            this.data = value;
-        }
-    }
-
-    Node reverseList(Node head) {
+    public Node reverseList(Node head) {
         if (head == null || head.next == null)
             return head;
 
@@ -28,22 +21,13 @@ public class P4 {
         return prev;
     }
 
-    static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-        Node h = new Node(1);
-        h.next = new Node(2);
-        h.next.next = new Node(3);
+        Scanner s = new Scanner(System.in);
+        Node h = Utils.inputList(s);
+        s.close();
 
-        print(h);
+        Utils.print(h);
         h = new P4().reverseList(h);
-        print(h);
+        Utils.print(h);
     }
 }

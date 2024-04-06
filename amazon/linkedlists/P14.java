@@ -1,16 +1,6 @@
 package amazon.linkedlists;
 
 public class P14 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
     public static int countNodesinLoop(Node head) {
         Node slow = head;
         Node fast = head;

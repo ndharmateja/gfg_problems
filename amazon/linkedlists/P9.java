@@ -1,28 +1,8 @@
 package amazon.linkedlists;
 
+import java.util.Scanner;
+
 public class P9 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
-    private static Node reverse(Node h) {
-        Node prev = null;
-        Node curr = h;
-        while (curr != null) {
-            Node next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-        }
-        return prev;
-    }
-
     private static Node removeZerosAtBeginning(Node h) {
         Node curr = h;
         while (curr.next != null && curr.data == 0) {
@@ -35,8 +15,8 @@ public class P9 {
     public static Node addTwoLists(Node num1, Node num2) {
         // Reverse numbers so that we can
         // from the units place
-        num1 = reverse(removeZerosAtBeginning(num1));
-        num2 = reverse(removeZerosAtBeginning(num2));
+        num1 = Utils.reverse(removeZerosAtBeginning(num1));
+        num2 = Utils.reverse(removeZerosAtBeginning(num2));
 
         // Dummy node
         Node dummy = new Node(-1);
@@ -66,29 +46,21 @@ public class P9 {
         }
 
         // Reverse and return the result
-        return reverse(dummy.next);
-    }
-
-    static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
+        return Utils.reverse(dummy.next);
     }
 
     public static void main(String[] args) {
-        Node h1 = new Node(0);
-        h1.next = new Node(5);
+        // 2
+        // 0 5
+        // 4
+        // 0 3 4 5
+        Scanner s = new Scanner(System.in);
+        Node h1 = Utils.inputList(s);
+        Node h2 = Utils.inputList(s);
+        s.close();
 
-        Node h2 = new Node(0);
-        h2.next = new Node(3);
-        h2.next.next = new Node(4);
-        h2.next.next.next = new Node(5);
-
-        print(h1);
-        print(h2);
-        print(addTwoLists(h1, h2));
+        Utils.print(h1);
+        Utils.print(h2);
+        Utils.print(addTwoLists(h1, h2));
     }
 }

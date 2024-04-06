@@ -1,16 +1,8 @@
 package amazon.linkedlists;
 
+import java.util.Scanner;
+
 public class P17 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int key) {
-            this.data = key;
-            next = null;
-        }
-    }
-
     /**
      * splits list into 2 halves
      * and returns the head of the second half
@@ -77,24 +69,14 @@ public class P17 {
         return merge(head, head2);
     }
 
-    private static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-        Node h = new Node(3);
-        h.next = new Node(5);
-        h.next.next = new Node(2);
-        h.next.next.next = new Node(4);
-        h.next.next.next.next = new Node(1);
-        h.next.next.next.next.next = new Node(4);
+        // 6
+        // 3 5 2 4 1 4
+        Scanner s = new Scanner(System.in);
+        Node h = Utils.inputList(s);
+        s.close();
 
-        print(h);
-        print(mergeSort(h));
+        Utils.print(h);
+        Utils.print(mergeSort(h));
     }
 }

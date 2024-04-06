@@ -1,17 +1,7 @@
 package amazon.linkedlists;
 
 public class P16 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
-    Node sortedMerge(Node head1, Node head2) {
+    public Node sortedMerge(Node head1, Node head2) {
         // The new list
         Node dummy = new Node(-1);
         Node curr = dummy;

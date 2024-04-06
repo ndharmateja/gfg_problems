@@ -1,17 +1,7 @@
 package amazon.linkedlists;
 
 public class P2 {
-    class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
-    Node deleteMid(Node head) {
+    public Node deleteMid(Node head) {
         if (head == null || head.next == null)
             return null;
 

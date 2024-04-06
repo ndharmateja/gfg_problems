@@ -1,17 +1,7 @@
 package amazon.linkedlists;
 
 public class P1 {
-    class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
-    int getMiddle(Node head) {
+    public int getMiddle(Node head) {
         Node slow, fast;
         slow = fast = head;
         while (fast != null && fast.next != null) {

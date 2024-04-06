@@ -1,16 +1,6 @@
 package amazon.linkedlists;
 
 public class P13 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
     public static boolean detectLoop(Node head) {
         Node slow = head;
         Node fast = head;

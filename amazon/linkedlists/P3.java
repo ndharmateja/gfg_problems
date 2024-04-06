@@ -1,17 +1,7 @@
 package amazon.linkedlists;
 
 public class P3 {
-    class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
-    Node sortedInsert(Node head, int key) {
+    public Node sortedInsert(Node head, int key) {
         Node newNode = new Node(key);
         // If list is empty
         if (head == null) {

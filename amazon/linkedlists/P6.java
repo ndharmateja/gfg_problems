@@ -1,16 +1,8 @@
 package amazon.linkedlists;
 
+import java.util.Scanner;
+
 public class P6 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int key) {
-            data = key;
-            next = null;
-        }
-    }
-
     // Swaps the next two nodes after curr (and sets the connections)
     // and returns the next next node to curr after the swap is done
     // If there aren't two nodes after curr, returns null
@@ -38,22 +30,13 @@ public class P6 {
         return dummy.next;
     }
 
-    static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-        Node h = new Node(1);
-        h.next = new Node(2);
-        h.next.next = new Node(3);
+        Scanner s = new Scanner(System.in);
+        Node h = Utils.inputList(s);
+        s.close();
 
-        print(h);
+        Utils.print(h);
         h = new P6().pairwiseSwap(h);
-        print(h);
+        Utils.print(h);
     }
 }
