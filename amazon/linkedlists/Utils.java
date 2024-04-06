@@ -25,18 +25,29 @@ public class Utils {
         System.out.println();
     }
 
-    public static Node inputList(Scanner sc) {
-        int size = sc.nextInt();
+    /**
+     * Inputs list from the scanner in form of
+     * 8
+     * 10 4 9 1 3 5 9 4
+     * 
+     * where first line contains size
+     * and the second line the list of elements
+     * 
+     * @param s
+     * @return the head of the created list
+     */
+    public static Node inputList(Scanner s) {
+        int size = s.nextInt();
 
         Node head, tail;
         int val;
 
-        val = sc.nextInt();
+        val = s.nextInt();
         head = tail = new Node(val);
 
         size--;
         while (size-- > 0) {
-            val = sc.nextInt();
+            val = s.nextInt();
             tail.next = new Node(val);
             tail = tail.next;
         }
