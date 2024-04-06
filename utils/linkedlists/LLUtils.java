@@ -1,4 +1,4 @@
-package amazon.linkedlists.utils;
+package utils.linkedlists;
 
 import java.util.Scanner;
 

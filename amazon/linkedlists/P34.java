@@ -2,8 +2,8 @@ package amazon.linkedlists;
 
 import java.util.Scanner;
 
-import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.LLUtils;
+import utils.linkedlists.LLUtils;
+import utils.linkedlists.Node;
 
 public class P34 {
     public static void rearrange(Node h) {

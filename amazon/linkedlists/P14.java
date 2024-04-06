@@ -1,6 +1,6 @@
 package amazon.linkedlists;
 
-import amazon.linkedlists.utils.Node;
+import utils.linkedlists.Node;
 
 public class P14 {
     public static int countNodesinLoop(Node head) {

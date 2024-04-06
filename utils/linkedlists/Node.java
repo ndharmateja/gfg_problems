@@ -1,4 +1,4 @@
-package amazon.linkedlists.utils;
+package utils.linkedlists;
 
 public class Node {
     public int data;

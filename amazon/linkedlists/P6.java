@@ -2,8 +2,8 @@ package amazon.linkedlists;
 
 import java.util.Scanner;
 
-import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.LLUtils;
+import utils.linkedlists.LLUtils;
+import utils.linkedlists.Node;
 
 public class P6 {
     // Swaps the next two nodes after curr (and sets the connections)

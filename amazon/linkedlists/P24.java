@@ -2,7 +2,7 @@ package amazon.linkedlists;
 
 import java.util.HashSet;
 
-import amazon.linkedlists.utils.Node;
+import utils.linkedlists.Node;
 
 public class P24 {
     public Node removeDuplicates(Node head) {

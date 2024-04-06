@@ -1,6 +1,6 @@
 package amazon.linkedlists;
 
-import amazon.linkedlists.utils.Node;
+import utils.linkedlists.Node;
 
 public class P5 {
     public Node rotate(Node head, int k) {
