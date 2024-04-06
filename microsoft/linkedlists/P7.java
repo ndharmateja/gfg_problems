@@ -1,16 +1,11 @@
 package microsoft.linkedlists;
 
+import java.util.Scanner;
+
+import utils.linkedlists.LLUtils;
+import utils.linkedlists.Node;
+
 public class P7 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
     // If node's data is same as node next's data
     // we delete the next node and return node itself
     // If data is different we return the next node
@@ -34,24 +29,15 @@ public class P7 {
         return head;
     }
 
-    static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-        Node h = new Node(2);
-        h.next = new Node(2);
-        h.next.next = new Node(3);
-        h.next.next.next = new Node(4);
-        h.next.next.next.next = new Node(4);
+        // 5
+        // 2 2 3 4 4
+        Scanner s = new Scanner(System.in);
+        Node h = LLUtils.inputList(s);
+        s.close();
 
-        print(h);
+        LLUtils.print(h);
         h = new P7().removeDuplicates(h);
-        print(h);
+        LLUtils.print(h);
     }
 }
