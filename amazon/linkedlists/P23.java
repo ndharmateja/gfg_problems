@@ -12,12 +12,10 @@ public class P23 {
      * @param data
      * @return
      */
-    private static Node insertAfter(Node node, int data) {
+    private static Node insertDataAfter(Node node, int data) {
         if (node.data == data)
             return node;
-        Node newNode = new Node(data);
-        node.next = newNode;
-        return newNode;
+        return LLUtils.insertAfter(node, new Node(data));
     }
 
     /**
@@ -53,16 +51,16 @@ public class P23 {
                 dataToInsert = curr2.data;
                 curr2 = curr2.next;
             }
-            curr = insertAfter(curr, dataToInsert);
+            curr = insertDataAfter(curr, dataToInsert);
         }
 
         // Process the remaining elements
         while (curr1 != null) {
-            curr = insertAfter(curr, curr1.data);
+            curr = insertDataAfter(curr, curr1.data);
             curr1 = curr1.next;
         }
         while (curr2 != null) {
-            curr = insertAfter(curr, curr2.data);
+            curr = insertDataAfter(curr, curr2.data);
             curr2 = curr2.next;
         }
 
