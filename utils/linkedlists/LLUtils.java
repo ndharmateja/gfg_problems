@@ -132,4 +132,14 @@ public class LLUtils {
 
         return LLUtils.merge(head, head2);
     }
+
+    /**
+     * 
+     * Inserts toInsert after node and returns the node inserted
+     */
+    public static Node insertAfter(Node node, Node toInsert) {
+        toInsert.next = node.next;
+        node.next = toInsert;
+        return toInsert;
+    }
 }
