@@ -55,4 +55,13 @@ public class Utils {
         return head;
     }
 
+    public static int getSize(Node head) {
+        int size = 0;
+        Node curr = head;
+        while (curr != null) {
+            size++;
+            curr = curr.next;
+        }
+        return size;
+    }
 }
