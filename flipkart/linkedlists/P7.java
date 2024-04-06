@@ -1,21 +1,9 @@
 package flipkart.linkedlists;
 
+import utils.linkedlists.LLUtils;
+import utils.linkedlists.Node;
+
 public class P7 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
-    private void insertAfter(Node node, Node toInsert) {
-        toInsert.next = node.next;
-        node.next = toInsert;
-    }
-
     public Node mergeResult(Node head1, Node head2) {
         // The new list
         Node dummy = new Node(-1);
@@ -28,11 +16,11 @@ public class P7 {
         while (curr1 != null && curr2 != null) {
             if (curr1.data < curr2.data) {
                 Node next = curr1.next;
-                insertAfter(dummy, curr1);
+                LLUtils.insertAfter(dummy, curr1);
                 curr1 = next;
             } else {
                 Node next = curr2.next;
-                insertAfter(dummy, curr2);
+                LLUtils.insertAfter(dummy, curr2);
                 curr2 = next;
             }
         }
@@ -40,12 +28,12 @@ public class P7 {
         // Attach the remaining parts of list1 or list2 to the new list
         while (curr1 != null) {
             Node next = curr1.next;
-            insertAfter(dummy, curr1);
+            LLUtils.insertAfter(dummy, curr1);
             curr1 = next;
         }
         while (curr2 != null) {
             Node next = curr2.next;
-            insertAfter(dummy, curr2);
+            LLUtils.insertAfter(dummy, curr2);
             curr2 = next;
         }
 

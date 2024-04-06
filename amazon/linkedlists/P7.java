@@ -6,12 +6,6 @@ import utils.linkedlists.LLUtils;
 import utils.linkedlists.Node;
 
 public class P7 {
-    static Node insertAfter(Node node, Node toInsert) {
-        toInsert.next = node.next;
-        node.next = toInsert;
-        return toInsert;
-    }
-
     static Node segregate(Node head) {
         Node dummy0 = new Node(-1);
         Node curr0 = dummy0;
@@ -28,11 +22,11 @@ public class P7 {
         while (curr != null) {
             Node next = curr.next;
             if (curr.data == 0) {
-                curr0 = insertAfter(curr0, curr);
+                curr0 = LLUtils.insertAfter(curr0, curr);
             } else if (curr.data == 1) {
-                curr1 = insertAfter(curr1, curr);
+                curr1 = LLUtils.insertAfter(curr1, curr);
             } else {
-                curr2 = insertAfter(curr2, curr);
+                curr2 = LLUtils.insertAfter(curr2, curr);
             }
             curr = next;
         }

@@ -6,12 +6,6 @@ import utils.linkedlists.LLUtils;
 import utils.linkedlists.Node;
 
 public class P11 {
-    static Node insertAfter(Node node, Node toInsert) {
-        toInsert.next = node.next;
-        node.next = toInsert;
-        return toInsert;
-    }
-
     void rearrangeEvenOdd(Node head) {
         Node dummy0 = new Node(-1);
         Node dummy1 = new Node(-1);
@@ -26,9 +20,9 @@ public class P11 {
         while (curr != null) {
             Node next = curr.next;
             if (i++ % 2 == 0) {
-                curr0 = insertAfter(curr0, curr);
+                curr0 = LLUtils.insertAfter(curr0, curr);
             } else {
-                curr1 = insertAfter(curr1, curr);
+                curr1 = LLUtils.insertAfter(curr1, curr);
             }
             curr = next;
         }
