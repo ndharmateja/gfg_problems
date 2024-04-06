@@ -21,6 +21,7 @@
 25. https://www.geeksforgeeks.org/problems/linked-list-in-zig-zag-fashion/1
 26. https://www.geeksforgeeks.org/problems/count-pairs-whose-sum-is-equal-to-x/1
 27. https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1
+29. https://www.geeksforgeeks.org/problems/delete-without-head-pointer/1
 30. https://www.geeksforgeeks.org/problems/polynomial-addition/1
 31. https://www.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1
 34. https://www.geeksforgeeks.org/problems/given-a-linked-list-reverse-alternate-nodes-and-append-at-the-end/1
