@@ -3,11 +3,11 @@ package amazon.linkedlists;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P8 {
     public static Node addOne(Node head) {
-        head = Utils.reverse(head);
+        head = LLUtils.reverse(head);
 
         // Add 1 to curr node
         // and inside the loop handle the overflow for each node
@@ -37,17 +37,17 @@ public class P8 {
             }
         }
 
-        return Utils.reverse(head);
+        return LLUtils.reverse(head);
     }
 
     public static void main(String[] args) {
         // 4
         // 1 9 9 9
         Scanner s = new Scanner(System.in);
-        Node h = Utils.inputList(s);
+        Node h = LLUtils.inputList(s);
         s.close();
 
         h = addOne(h);
-        Utils.print(h);
+        LLUtils.print(h);
     }
 }

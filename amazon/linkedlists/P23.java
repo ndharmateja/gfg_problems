@@ -1,7 +1,7 @@
 package amazon.linkedlists;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 @SuppressWarnings("unused")
 public class P23 {
@@ -36,8 +36,8 @@ public class P23 {
         Node curr = dummy;
 
         // Sort both the lists
-        head1 = Utils.mergeSort(head1);
-        head2 = Utils.mergeSort(head2);
+        head1 = LLUtils.mergeSort(head1);
+        head2 = LLUtils.mergeSort(head2);
         Node curr1 = head1;
         Node curr2 = head2;
 
@@ -89,7 +89,7 @@ public class P23 {
         last1.next = head2;
 
         // Sort list
-        Node head = Utils.mergeSort(head1);
+        Node head = LLUtils.mergeSort(head1);
 
         // Remove duplicates
         Node curr = head;

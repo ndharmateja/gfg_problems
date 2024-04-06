@@ -1,7 +1,7 @@
 package amazon.linkedlists;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 @SuppressWarnings("unused")
 public class P12 {
@@ -14,7 +14,7 @@ public class P12 {
     }
 
     private int solution1(Node head, int n) {
-        int size = Utils.getSize(head);
+        int size = LLUtils.getSize(head);
         if (n > size)
             return -1;
 

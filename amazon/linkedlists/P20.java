@@ -3,7 +3,7 @@ package amazon.linkedlists;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P20 {
     public static Node findIntersection(Node head1, Node head2) {
@@ -34,11 +34,11 @@ public class P20 {
         // 2
         // 15 40
         Scanner s = new Scanner(System.in);
-        Node h1 = Utils.inputList(s);
-        Node h2 = Utils.inputList(s);
+        Node h1 = LLUtils.inputList(s);
+        Node h2 = LLUtils.inputList(s);
         s.close();
 
         Node h = findIntersection(h1, h2);
-        Utils.print(h);
+        LLUtils.print(h);
     }
 }

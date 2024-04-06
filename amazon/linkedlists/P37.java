@@ -1,7 +1,7 @@
 package amazon.linkedlists;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P37 {
     /**
@@ -41,7 +41,7 @@ public class P37 {
     public void reorderlist(Node head) {
         // Split the list and reverse the second half
         Node head2 = splitList(head);
-        head2 = Utils.reverse(head2);
+        head2 = LLUtils.reverse(head2);
 
         // Alternate adding nodes from first and second lists
         // Creating a dummy node is okay because the testing will be done

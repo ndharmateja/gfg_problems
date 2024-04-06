@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P38 {
     public static Node findIntersection(Node head1, Node head2) {
@@ -40,11 +40,11 @@ public class P38 {
         // 4
         // 1 2 8 6
         Scanner s = new Scanner(System.in);
-        Node head1 = Utils.inputList(s);
-        Node head2 = Utils.inputList(s);
+        Node head1 = LLUtils.inputList(s);
+        Node head2 = LLUtils.inputList(s);
         s.close();
 
         Node result = findIntersection(head1, head2);
-        Utils.print(result);
+        LLUtils.print(result);
     }
 }

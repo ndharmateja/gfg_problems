@@ -3,7 +3,7 @@ package amazon.linkedlists;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P6 {
     // Swaps the next two nodes after curr (and sets the connections)
@@ -35,11 +35,11 @@ public class P6 {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        Node h = Utils.inputList(s);
+        Node h = LLUtils.inputList(s);
         s.close();
 
-        Utils.print(h);
+        LLUtils.print(h);
         h = new P6().pairwiseSwap(h);
-        Utils.print(h);
+        LLUtils.print(h);
     }
 }

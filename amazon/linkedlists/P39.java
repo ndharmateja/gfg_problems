@@ -1,7 +1,7 @@
 package amazon.linkedlists;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P39 {
     private Node insertAfter(Node node, Node toInsert) {
@@ -35,6 +35,6 @@ public class P39 {
         }
 
         // Merge the two sorted lists
-        return Utils.merge(dummy0.next, dummy1.next);
+        return LLUtils.merge(dummy0.next, dummy1.next);
     }
 }

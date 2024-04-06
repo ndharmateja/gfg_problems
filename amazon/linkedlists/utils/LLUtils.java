@@ -2,7 +2,7 @@ package amazon.linkedlists.utils;
 
 import java.util.Scanner;
 
-public class Utils {
+public class LLUtils {
     public static Node reverse(Node h) {
         Node prev = null;
         Node curr = h;
@@ -136,6 +136,6 @@ public class Utils {
         head = mergeSort(head);
         head2 = mergeSort(head2);
 
-        return Utils.merge(head, head2);
+        return LLUtils.merge(head, head2);
     }
 }

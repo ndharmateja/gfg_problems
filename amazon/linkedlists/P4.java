@@ -3,7 +3,7 @@ package amazon.linkedlists;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P4 {
     public Node reverseList(Node head) {
@@ -26,11 +26,11 @@ public class P4 {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        Node h = Utils.inputList(s);
+        Node h = LLUtils.inputList(s);
         s.close();
 
-        Utils.print(h);
+        LLUtils.print(h);
         h = new P4().reverseList(h);
-        Utils.print(h);
+        LLUtils.print(h);
     }
 }

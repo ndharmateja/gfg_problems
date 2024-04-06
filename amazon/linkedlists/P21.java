@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 @SuppressWarnings("unused")
 public class P21 {
@@ -31,8 +31,8 @@ public class P21 {
 
     // O(N + M) time and O(1) space complexities
     private int solution2(Node head1, Node head2) {
-        int size1 = Utils.getSize(head1);
-        int size2 = Utils.getSize(head2);
+        int size1 = LLUtils.getSize(head1);
+        int size2 = LLUtils.getSize(head2);
 
         // If size1 > size2 we will swap the heads
         // so that list 1 will always have the lower size
@@ -74,16 +74,16 @@ public class P21 {
         // 1
         // 10
         Scanner s = new Scanner(System.in);
-        Node common = Utils.inputList(s);
-        Node h1 = Utils.inputList(s);
-        Node h2 = Utils.inputList(s);
+        Node common = LLUtils.inputList(s);
+        Node h1 = LLUtils.inputList(s);
+        Node h2 = LLUtils.inputList(s);
         s.close();
 
-        Utils.joinLists(h1, common);
-        Utils.joinLists(h2, common);
+        LLUtils.joinLists(h1, common);
+        LLUtils.joinLists(h2, common);
 
-        Utils.print(h1);
-        Utils.print(h2);
+        LLUtils.print(h1);
+        LLUtils.print(h2);
         System.out.println(new P21().intersectPoint(h1, h2));
     }
 }

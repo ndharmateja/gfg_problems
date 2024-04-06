@@ -3,7 +3,7 @@ package amazon.linkedlists;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P11 {
     static Node insertAfter(Node node, Node toInsert) {
@@ -45,11 +45,11 @@ public class P11 {
         // 4
         // 1 2 3 4
         Scanner s = new Scanner(System.in);
-        Node h = Utils.inputList(s);
+        Node h = LLUtils.inputList(s);
         s.close();
 
-        Utils.print(h);
+        LLUtils.print(h);
         new P11().rearrangeEvenOdd(h);
-        Utils.print(h);
+        LLUtils.print(h);
     }
 }

@@ -3,7 +3,7 @@ package amazon.linkedlists;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P34 {
     public static void rearrange(Node h) {
@@ -36,18 +36,18 @@ public class P34 {
         // At this point, curr0 is the end of the first list
         // and curr1 is the end of the second list
         // Reverse second list and add it at the end of first list
-        curr0.next = Utils.reverse(dummy1.next);
+        curr0.next = LLUtils.reverse(dummy1.next);
     }
 
     public static void main(String[] args) {
         // 8
         // 10 4 9 1 3 5 9 4
         Scanner s = new Scanner(System.in);
-        Node h = Utils.inputList(s);
+        Node h = LLUtils.inputList(s);
         s.close();
 
-        Utils.print(h);
+        LLUtils.print(h);
         rearrange(h);
-        Utils.print(h);
+        LLUtils.print(h);
     }
 }

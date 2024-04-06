@@ -1,7 +1,7 @@
 package amazon.linkedlists;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P22 {
     public boolean isPalindrome(Node head) {
@@ -17,7 +17,7 @@ public class P22 {
         // If fast.next is null, the list is odd lengthed and
         // the slow pointer is at the middle node
         Node secondHalf = fast == null ? slow : slow.next;
-        Node secondHalfReverse = Utils.reverse(secondHalf);
+        Node secondHalfReverse = LLUtils.reverse(secondHalf);
 
         // Now see if second half reverse is same as the first half
         // and for odd lengthed list second half will have one size less

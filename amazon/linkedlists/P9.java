@@ -3,7 +3,7 @@ package amazon.linkedlists;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P9 {
     private static Node removeZerosAtBeginning(Node h) {
@@ -18,8 +18,8 @@ public class P9 {
     public static Node addTwoLists(Node num1, Node num2) {
         // Reverse numbers so that we can
         // from the units place
-        num1 = Utils.reverse(removeZerosAtBeginning(num1));
-        num2 = Utils.reverse(removeZerosAtBeginning(num2));
+        num1 = LLUtils.reverse(removeZerosAtBeginning(num1));
+        num2 = LLUtils.reverse(removeZerosAtBeginning(num2));
 
         // Dummy node
         Node dummy = new Node(-1);
@@ -49,7 +49,7 @@ public class P9 {
         }
 
         // Reverse and return the result
-        return Utils.reverse(dummy.next);
+        return LLUtils.reverse(dummy.next);
     }
 
     public static void main(String[] args) {
@@ -58,12 +58,12 @@ public class P9 {
         // 4
         // 0 3 4 5
         Scanner s = new Scanner(System.in);
-        Node h1 = Utils.inputList(s);
-        Node h2 = Utils.inputList(s);
+        Node h1 = LLUtils.inputList(s);
+        Node h2 = LLUtils.inputList(s);
         s.close();
 
-        Utils.print(h1);
-        Utils.print(h2);
-        Utils.print(addTwoLists(h1, h2));
+        LLUtils.print(h1);
+        LLUtils.print(h2);
+        LLUtils.print(addTwoLists(h1, h2));
     }
 }

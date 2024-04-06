@@ -3,7 +3,7 @@ package amazon.linkedlists;
 import java.util.Scanner;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P17 {
     /**
@@ -76,10 +76,10 @@ public class P17 {
         // 6
         // 3 5 2 4 1 4
         Scanner s = new Scanner(System.in);
-        Node h = Utils.inputList(s);
+        Node h = LLUtils.inputList(s);
         s.close();
 
-        Utils.print(h);
-        Utils.print(mergeSort(h));
+        LLUtils.print(h);
+        LLUtils.print(mergeSort(h));
     }
 }

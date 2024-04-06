@@ -1,12 +1,12 @@
 package amazon.linkedlists;
 
 import amazon.linkedlists.utils.Node;
-import amazon.linkedlists.utils.Utils;
+import amazon.linkedlists.utils.LLUtils;
 
 public class P31 {
     public Node compute(Node head) {
         // Reverse the list as we can't traverse from right to left
-        head = Utils.reverse(head);
+        head = LLUtils.reverse(head);
 
         // Iterate and delete the elements that are not max so far
         int max = Integer.MIN_VALUE;
@@ -28,6 +28,6 @@ public class P31 {
         }
 
         // Reverse the list to get the original order
-        return Utils.reverse(head);
+        return LLUtils.reverse(head);
     }
 }
