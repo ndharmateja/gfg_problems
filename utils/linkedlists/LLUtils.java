@@ -39,20 +39,14 @@ public class LLUtils {
     public static Node inputList(Scanner s) {
         int size = s.nextInt();
 
-        Node head, tail;
-        int val;
-
-        val = s.nextInt();
-        head = tail = new Node(val);
-
-        size--;
-        while (size-- > 0) {
-            val = s.nextInt();
-            tail.next = new Node(val);
-            tail = tail.next;
+        Node dummy = new Node(-1);
+        Node curr = dummy;
+        for (int i = 0; i < size; i++) {
+            curr.next = new Node(s.nextInt());
+            curr = curr.next;
         }
 
-        return head;
+        return dummy.next;
     }
 
     public static int getSize(Node h) {
