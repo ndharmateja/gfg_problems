@@ -2,6 +2,9 @@ package amazon.linkedlists;
 
 import java.util.Scanner;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P9 {
     private static Node removeZerosAtBeginning(Node h) {
         Node curr = h;

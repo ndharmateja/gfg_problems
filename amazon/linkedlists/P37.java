@@ -1,5 +1,8 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P37 {
     /**
      * Splits the list into 2 parts and returns the head of the second half

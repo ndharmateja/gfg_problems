@@ -1,5 +1,7 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+
 public class P14 {
     public static int countNodesinLoop(Node head) {
         Node slow = head;

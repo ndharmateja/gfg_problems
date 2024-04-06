@@ -3,6 +3,9 @@ package amazon.linkedlists;
 import java.util.HashSet;
 import java.util.Scanner;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P38 {
     public static Node findIntersection(Node head1, Node head2) {
         HashSet<Integer> set2 = new HashSet<>();

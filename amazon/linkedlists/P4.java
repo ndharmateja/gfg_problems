@@ -2,6 +2,9 @@ package amazon.linkedlists;
 
 import java.util.Scanner;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P4 {
     public Node reverseList(Node head) {
         if (head == null || head.next == null)

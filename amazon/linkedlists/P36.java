@@ -1,5 +1,7 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+
 public class P36 {
     /**
      * Sorted insert into a circular linked list

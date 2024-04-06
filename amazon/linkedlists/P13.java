@@ -1,5 +1,7 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+
 public class P13 {
     public static boolean detectLoop(Node head) {
         Node slow = head;

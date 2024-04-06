@@ -2,6 +2,9 @@ package amazon.linkedlists;
 
 import java.util.Scanner;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P20 {
     public static Node findIntersection(Node head1, Node head2) {
         Node dummy = new Node(-1);

@@ -2,6 +2,9 @@ package amazon.linkedlists;
 
 import java.util.Scanner;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P8 {
     public static Node addOne(Node head) {
         head = Utils.reverse(head);

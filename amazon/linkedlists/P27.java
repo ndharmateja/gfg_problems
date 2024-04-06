@@ -2,6 +2,9 @@ package amazon.linkedlists;
 
 import java.util.Scanner;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P27 {
     // Reverses the 'k' nodes after 'node'
     // and returns the last node of those 'k' nodes after reversing the group

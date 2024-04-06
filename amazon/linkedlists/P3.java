@@ -1,5 +1,7 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+
 public class P3 {
     public Node sortedInsert(Node head, int key) {
         Node newNode = new Node(key);

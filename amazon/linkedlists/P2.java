@@ -1,5 +1,7 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+
 public class P2 {
     public Node deleteMid(Node head) {
         if (head == null || head.next == null)

@@ -1,5 +1,8 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P31 {
     public Node compute(Node head) {
         // Reverse the list as we can't traverse from right to left

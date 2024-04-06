@@ -3,6 +3,9 @@ package amazon.linkedlists;
 import java.util.HashSet;
 import java.util.Scanner;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 @SuppressWarnings("unused")
 public class P21 {
     // O(N + M) time and O(max(N, M)) space complexities

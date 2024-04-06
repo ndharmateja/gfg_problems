@@ -1,5 +1,8 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P22 {
     public boolean isPalindrome(Node head) {
         Node slow = head;

@@ -1,5 +1,7 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+
 public class P16 {
     public Node sortedMerge(Node head1, Node head2) {
         // The new list

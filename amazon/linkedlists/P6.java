@@ -2,6 +2,9 @@ package amazon.linkedlists;
 
 import java.util.Scanner;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P6 {
     // Swaps the next two nodes after curr (and sets the connections)
     // and returns the next next node to curr after the swap is done

@@ -1,5 +1,8 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P39 {
     private Node insertAfter(Node node, Node toInsert) {
         toInsert.next = node.next;

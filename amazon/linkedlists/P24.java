@@ -2,6 +2,8 @@ package amazon.linkedlists;
 
 import java.util.HashSet;
 
+import amazon.linkedlists.utils.Node;
+
 public class P24 {
     public Node removeDuplicates(Node head) {
         Node dummy = new Node(-1);

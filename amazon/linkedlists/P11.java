@@ -2,6 +2,9 @@ package amazon.linkedlists;
 
 import java.util.Scanner;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 public class P11 {
     static Node insertAfter(Node node, Node toInsert) {
         toInsert.next = node.next;

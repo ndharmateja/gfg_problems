@@ -1,5 +1,8 @@
 package amazon.linkedlists;
 
+import amazon.linkedlists.utils.Node;
+import amazon.linkedlists.utils.Utils;
+
 @SuppressWarnings("unused")
 public class P23 {
     /**
