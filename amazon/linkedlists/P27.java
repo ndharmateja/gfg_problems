@@ -1,16 +1,8 @@
 package amazon.linkedlists;
 
+import java.util.Scanner;
+
 public class P27 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int key) {
-            data = key;
-            next = null;
-        }
-    }
-
     // Reverses the 'k' nodes after 'node'
     // and returns the last node of those 'k' nodes after reversing the group
     // Works even if there are less than 'k' nodes after 'node'
@@ -49,23 +41,15 @@ public class P27 {
         return dummy.next;
     }
 
-    static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-        Node h = new Node(1);
-        h.next = new Node(2);
-        h.next.next = new Node(3);
-        h.next.next.next = new Node(4);
+        // 4
+        // 1 2 3 4
+        Scanner s = new Scanner(System.in);
+        Node h = Utils.inputList(s);
+        s.close();
 
-        print(h);
-        h = reverse(h, 5);
-        print(h);
+        Utils.print(h);
+        h = reverse(h, 3);
+        Utils.print(h);
     }
 }

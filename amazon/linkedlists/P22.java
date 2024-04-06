@@ -1,34 +1,6 @@
 package amazon.linkedlists;
 
 public class P22 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
-    private Node reverse(Node head) {
-        if (head == null || head.next == null)
-            return head;
-
-        Node prev = null;
-        Node curr = head;
-
-        while (curr != null) {
-            Node next = curr.next;
-            curr.next = prev;
-
-            prev = curr;
-            curr = next;
-        }
-
-        return prev;
-    }
-
     public boolean isPalindrome(Node head) {
         Node slow = head;
         Node fast = head;
@@ -42,7 +14,7 @@ public class P22 {
         // If fast.next is null, the list is odd lengthed and
         // the slow pointer is at the middle node
         Node secondHalf = fast == null ? slow : slow.next;
-        Node secondHalfReverse = reverse(secondHalf);
+        Node secondHalfReverse = Utils.reverse(secondHalf);
 
         // Now see if second half reverse is same as the first half
         // and for odd lengthed list second half will have one size less

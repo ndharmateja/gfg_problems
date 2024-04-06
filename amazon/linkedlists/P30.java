@@ -1,7 +1,7 @@
 package amazon.linkedlists;
 
 public class P30 {
-    static class Node {
+    private static class Node {
         int coeff;
         int pow;
         Node next;

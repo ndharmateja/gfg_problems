@@ -32,6 +32,10 @@ public class P38 {
     }
 
     public static void main(String args[]) {
+        // 6
+        // 9 6 4 2 3 8
+        // 4
+        // 1 2 8 6
         Scanner s = new Scanner(System.in);
         Node head1 = Utils.inputList(s);
         Node head2 = Utils.inputList(s);

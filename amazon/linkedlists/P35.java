@@ -1,7 +1,8 @@
 package amazon.linkedlists;
 
+@SuppressWarnings("unused")
 public class P35 {
-    static class Node {
+    private static class Node {
         int data;
         Node next;
         Node prev;

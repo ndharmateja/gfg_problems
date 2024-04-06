@@ -1,47 +1,6 @@
 package amazon.linkedlists;
 
 public class P39 {
-    static class Node {
-        int data;
-        Node next;
-
-        public Node(int data) {
-            this.data = data;
-            this.next = null;
-        }
-    }
-
-    private Node merge(Node head1, Node head2) {
-        // The new list
-        Node dummy = new Node(-1);
-        Node curr = dummy;
-
-        // Iterate simultaneously
-        // and attach the smaller node to the new list in each iteration
-        Node curr1 = head1;
-        Node curr2 = head2;
-        while (curr1 != null && curr2 != null) {
-            if (curr1.data < curr2.data) {
-                curr.next = curr1;
-                curr1 = curr1.next;
-            } else {
-                curr.next = curr2;
-                curr2 = curr2.next;
-            }
-            curr = curr.next;
-        }
-
-        // Attach the remaining parts of list1 or list2 to the new list
-        if (curr1 != null) {
-            curr.next = curr1;
-        }
-        if (curr2 != null) {
-            curr.next = curr2;
-        }
-
-        return dummy.next;
-    }
-
     private Node insertAfter(Node node, Node toInsert) {
         toInsert.next = node.next;
         node.next = toInsert;
@@ -73,6 +32,6 @@ public class P39 {
         }
 
         // Merge the two sorted lists
-        return merge(dummy0.next, dummy1.next);
+        return Utils.merge(dummy0.next, dummy1.next);
     }
 }

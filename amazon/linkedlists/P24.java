@@ -3,16 +3,6 @@ package amazon.linkedlists;
 import java.util.HashSet;
 
 public class P24 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
     public Node removeDuplicates(Node head) {
         Node dummy = new Node(-1);
         dummy.next = head;

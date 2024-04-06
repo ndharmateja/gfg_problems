@@ -2,82 +2,6 @@ package amazon.linkedlists;
 
 @SuppressWarnings("unused")
 public class P23 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
-    /**
-     * splits list into 2 halves
-     * and returns the head of the second half
-     * 
-     * @param h
-     * @return
-     */
-    private static Node splitList(Node h) {
-        Node prev = null;
-        Node slow = h;
-        Node fast = h;
-        while (fast != null && fast.next != null) {
-            prev = slow;
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-
-        // Break the list into 2 halves
-        prev.next = null;
-
-        // Return head of second half
-        return slow;
-    }
-
-    private static Node merge(Node head1, Node head2) {
-        // The new list
-        Node dummy = new Node(-1);
-        Node curr = dummy;
-
-        // Iterate simultaneously
-        // and attach the smaller node to the new list in each iteration
-        Node curr1 = head1;
-        Node curr2 = head2;
-        while (curr1 != null && curr2 != null) {
-            if (curr1.data < curr2.data) {
-                curr.next = curr1;
-                curr1 = curr1.next;
-            } else {
-                curr.next = curr2;
-                curr2 = curr2.next;
-            }
-            curr = curr.next;
-        }
-
-        // Attach the remaining parts of list1 or list2 to the new list
-        if (curr1 != null) {
-            curr.next = curr1;
-        }
-        if (curr2 != null) {
-            curr.next = curr2;
-        }
-
-        return dummy.next;
-    }
-
-    public static Node mergeSort(Node head) {
-        if (head == null || head.next == null)
-            return head;
-
-        Node head2 = splitList(head);
-        head = mergeSort(head);
-        head2 = mergeSort(head2);
-
-        return merge(head, head2);
-    }
-
     /**
      * Inserts data after node if it is not equal to node's data
      * 
@@ -109,8 +33,8 @@ public class P23 {
         Node curr = dummy;
 
         // Sort both the lists
-        head1 = mergeSort(head1);
-        head2 = mergeSort(head2);
+        head1 = Utils.mergeSort(head1);
+        head2 = Utils.mergeSort(head2);
         Node curr1 = head1;
         Node curr2 = head2;
 
@@ -162,7 +86,7 @@ public class P23 {
         last1.next = head2;
 
         // Sort list
-        Node head = mergeSort(head1);
+        Node head = Utils.mergeSort(head1);
 
         // Remove duplicates
         Node curr = head;

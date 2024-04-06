@@ -1,19 +1,10 @@
 package amazon.linkedlists;
 
 import java.util.HashSet;
+import java.util.Scanner;
 
 @SuppressWarnings("unused")
 public class P21 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
     // O(N + M) time and O(max(N, M)) space complexities
     // Using a hashset
     private int solution1(Node head1, Node head2) {
@@ -35,20 +26,10 @@ public class P21 {
         return -1;
     }
 
-    private int size(Node h) {
-        int size = 0;
-        Node curr = h;
-        while (curr != null) {
-            size++;
-            curr = curr.next;
-        }
-        return size;
-    }
-
     // O(N + M) time and O(1) space complexities
     private int solution2(Node head1, Node head2) {
-        int size1 = size(head1);
-        int size2 = size(head2);
+        int size1 = Utils.getSize(head1);
+        int size2 = Utils.getSize(head2);
 
         // If size1 > size2 we will swap the heads
         // so that list 1 will always have the lower size
@@ -82,29 +63,24 @@ public class P21 {
         return solution2(head1, head2);
     }
 
-    static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-        Node common = new Node(15);
-        common.next = new Node(30);
+        // 2
+        // 15 30
+        // 3
+        // 3 6 9
+        // 1
+        // 10
+        Scanner s = new Scanner(System.in);
+        Node common = Utils.inputList(s);
+        Node h1 = Utils.inputList(s);
+        Node h2 = Utils.inputList(s);
+        s.close();
 
-        Node h1 = new Node(3);
-        h1.next = new Node(6);
-        h1.next.next = new Node(9);
-        h1.next.next.next = common;
+        Utils.joinLists(h1, common);
+        Utils.joinLists(h2, common);
 
-        Node h2 = new Node(10);
-        h2.next = common;
-
-        print(h1);
-        print(h2);
+        Utils.print(h1);
+        Utils.print(h2);
         System.out.println(new P21().intersectPoint(h1, h2));
     }
 }

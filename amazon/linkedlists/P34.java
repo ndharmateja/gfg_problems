@@ -37,6 +37,8 @@ public class P34 {
     }
 
     public static void main(String[] args) {
+        // 8
+        // 10 4 9 1 3 5 9 4
         Scanner s = new Scanner(System.in);
         Node h = Utils.inputList(s);
         s.close();

@@ -1,31 +1,9 @@
 package amazon.linkedlists;
 
 public class P31 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int data) {
-            this.data = data;
-        }
-    }
-
-    private Node reverse(Node h) {
-        Node prev = null;
-        Node curr = h;
-        while (curr != null) {
-            Node next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-        }
-
-        return prev;
-    }
-
     public Node compute(Node head) {
         // Reverse the list as we can't traverse from right to left
-        head = reverse(head);
+        head = Utils.reverse(head);
 
         // Iterate and delete the elements that are not max so far
         int max = Integer.MIN_VALUE;
@@ -47,6 +25,6 @@ public class P31 {
         }
 
         // Reverse the list to get the original order
-        return reverse(head);
+        return Utils.reverse(head);
     }
 }

@@ -1,16 +1,6 @@
 package amazon.linkedlists;
 
 public class P37 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
     /**
      * Splits the list into 2 parts and returns the head of the second half
      * For odd lengthed lists, the first half will be larger than the second half
@@ -45,22 +35,10 @@ public class P37 {
         return toReturn;
     }
 
-    private Node reverse(Node h) {
-        Node prev = null;
-        Node curr = h;
-        while (curr != null) {
-            Node next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-        }
-        return prev;
-    }
-
     public void reorderlist(Node head) {
         // Split the list and reverse the second half
         Node head2 = splitList(head);
-        head2 = reverse(head2);
+        head2 = Utils.reverse(head2);
 
         // Alternate adding nodes from first and second lists
         // Creating a dummy node is okay because the testing will be done

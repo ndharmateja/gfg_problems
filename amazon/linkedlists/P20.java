@@ -1,16 +1,8 @@
 package amazon.linkedlists;
 
+import java.util.Scanner;
+
 public class P20 {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
-
     public static Node findIntersection(Node head1, Node head2) {
         Node dummy = new Node(-1);
         Node curr = dummy;
@@ -33,25 +25,17 @@ public class P20 {
         return dummy.next;
     }
 
-    static void print(Node head) {
-        Node curr = head;
-        while (curr != null) {
-            System.out.print(curr.data + " -> ");
-            curr = curr.next;
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-        Node h1 = new Node(10);
-        h1.next = new Node(20);
-        h1.next.next = new Node(40);
-        h1.next.next.next = new Node(50);
-
-        Node h2 = new Node(15);
-        h2.next = new Node(40);
+        // 4
+        // 10 20 40 50
+        // 2
+        // 15 40
+        Scanner s = new Scanner(System.in);
+        Node h1 = Utils.inputList(s);
+        Node h2 = Utils.inputList(s);
+        s.close();
 
         Node h = findIntersection(h1, h2);
-        print(h);
+        Utils.print(h);
     }
 }
