@@ -13,6 +13,7 @@
 14. https://www.geeksforgeeks.org/problems/find-length-of-loop/1
 16. https://www.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1
 17. https://www.geeksforgeeks.org/problems/sort-a-linked-list/1
+18. https://www.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1
 20. https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-linked-lists/1
 21. https://www.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1
 22. https://www.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1
@@ -25,6 +26,7 @@
 30. https://www.geeksforgeeks.org/problems/polynomial-addition/1
 31. https://www.geeksforgeeks.org/problems/delete-nodes-having-greater-value-on-right/1
 32. https://www.geeksforgeeks.org/problems/flattening-a-linked-list/1
+33. https://www.geeksforgeeks.org/problems/swap-kth-node-from-beginning-and-kth-node-from-end-in-a-singly-linked-list/1
 34. https://www.geeksforgeeks.org/problems/given-a-linked-list-reverse-alternate-nodes-and-append-at-the-end/1
 35. https://www.geeksforgeeks.org/problems/delete-node-in-doubly-linked-list/1
 36. https://www.geeksforgeeks.org/problems/sorted-insert-for-circular-linked-list/1
