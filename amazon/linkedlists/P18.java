@@ -23,7 +23,8 @@ public class P18 {
         return LLUtils.merge(leftMerge, rightMerge);
     }
 
-    // O(nk) time
+    // O(n*k^2) time because the length of the resulting list keeps on increasing
+    // total time = 2k + 3k + ... + nk = n * k * (k - 1) / 2
     // Merge one by one
     private Node solution2(Node[] arr, int k) {
         Node result = arr[0];
