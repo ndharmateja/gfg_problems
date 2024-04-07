@@ -11,6 +11,7 @@
 12. https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1
 13. https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1
 14. https://www.geeksforgeeks.org/problems/find-length-of-loop/1
+15. https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1
 16. https://www.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1
 17. https://www.geeksforgeeks.org/problems/sort-a-linked-list/1
 18. https://www.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1
