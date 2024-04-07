@@ -1,1 +1,2 @@
 9. https://www.geeksforgeeks.org/problems/insertion-sort-for-singly-linked-list/1
+10. https://www.geeksforgeeks.org/problems/sorted-list-to-bst/1
