@@ -130,7 +130,7 @@ public class LLUtils {
         head = mergeSort(head);
         head2 = mergeSort(head2);
 
-        return LLUtils.merge(head, head2);
+        return merge(head, head2);
     }
 
     /**
