@@ -29,6 +29,8 @@ public class P32 {
         return size;
     }
 
+    // Alternate1: Can also be done by merging each of the vertical lists
+    // Alternate2: Collect all the elements together and then sort it
     public Node flatten(Node root) {
         // To store the resulting flattened list
         Node dummy = new Node(-1);
