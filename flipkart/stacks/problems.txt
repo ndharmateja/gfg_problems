@@ -1,3 +1,4 @@
+1. https://www.geeksforgeeks.org/problems/immediate-smaller-element1142/1
 4. https://www.geeksforgeeks.org/problems/print-bracket-number4058/1
 8. https://www.geeksforgeeks.org/problems/clone-a-stack-without-usinig-extra-space/1
 9. https://www.geeksforgeeks.org/minimum-number-of-parentheses-to-be-added-to-make-it-valid/
