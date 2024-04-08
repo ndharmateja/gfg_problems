@@ -10,20 +10,20 @@ public class P11 {
     private static final char LEFT_SQUARE = '[';
     private static final char RIGHT_SQUARE = ']';
 
-    static boolean isOpening(char c) {
+    private static boolean isOpening(char c) {
         return c == LEFT_PARANTHESIS || c == LEFT_BRACE || c == LEFT_SQUARE;
     }
 
-    static boolean isClosing(char c) {
+    private static boolean isClosing(char c) {
         return c == RIGHT_PARANTHESIS || c == RIGHT_BRACE || c == RIGHT_SQUARE;
     }
 
-    static boolean areMatching(char open, char close) {
+    private static boolean areMatching(char open, char close) {
         return (open == LEFT_PARANTHESIS && close == RIGHT_PARANTHESIS) || (open == LEFT_BRACE && close == RIGHT_BRACE)
                 || (open == LEFT_SQUARE && close == RIGHT_SQUARE);
     }
 
-    static boolean ispar(String x) {
+    public static boolean ispar(String x) {
         Stack<Character> stack = new Stack<>();
         for (char c : x.toCharArray()) {
             if (isOpening(c)) {
