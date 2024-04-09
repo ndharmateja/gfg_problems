@@ -4,6 +4,7 @@
 5. https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1
 7. https://www.geeksforgeeks.org/problems/remove-duplicates-in-small-prime-array/1
 10. https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1
+12. https://www.geeksforgeeks.org/problems/wave-array-1587115621/1
 13. https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
 25. https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
 26. https://www.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1
